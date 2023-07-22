@@ -1,3 +1,3 @@
-module.exports = { date: '2024-05-08T18:20:22+05:30', code: 'for (let i = 0; i < 10; i++) {
-	// Loop body
+module.exports = { date: '2023-07-22T18:20:23+05:30', code: 'else if (condition) {
+	// Statement
 }', functionCode: '' };
