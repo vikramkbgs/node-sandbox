@@ -1,3 +1,3 @@
-module.exports = { date: '2024-04-22T18:20:22+05:30', code: 'class Class28 {
-	// Class body
+module.exports = { date: '2023-09-06T18:20:22+05:30', code: 'else (condition) {
+	// Statement
 }', functionCode: '' };
