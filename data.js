@@ -1,3 +1,3 @@
-module.exports = { date: '2023-06-26T18:20:27+05:30', code: '[object Object]', functionCode: 'function function22() {
-	// Function body
-}' };
+module.exports = { date: '2023-12-23T18:20:28+05:30', code: 'if (condition) {
+	// Statement
+}', functionCode: '' };
