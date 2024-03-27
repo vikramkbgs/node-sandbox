@@ -84,3 +84,34 @@ const numbers = [1, 2, 3, 4, 5];
 const doubled = numbers.map(multiplier(2));  // [2, 4, 6, 8, 10]
 const tripled = numbers.map(multiplier(3));
 ```
+
+22. What is **callback function** in javascript?
+- Callbacks are a fundament concept in javascript used to manage asynchronous operations and ensure that certain code executes only after other code has finished running. They are functions that are passed as arguments to other functions and are executed once the operation they are associated with is complete.
+
+```javascript
+function fetchData(callback) {
+    // Simulating asynchronous operation (e.g., fetching data from a server)
+    setTimeout(function() {
+        const data = { name: 'John', age: 30 };
+        // Simulating error
+        const error = null; // Set to null for success
+        // Invoke the callback function
+        callback(error, data);
+    }, 2000);
+}
+
+// Callback function to handle the fetched data
+function handleData(error, data) {
+    if (error) {
+        console.error('Error:', error);
+    } else {
+        console.log('Data:', data);
+    }
+}
+
+// Initiating the asynchronous operation with a callback
+fetchData(handleData);
+
+console.log('Fetching data...');
+```
+
