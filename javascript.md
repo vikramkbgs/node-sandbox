@@ -201,3 +201,41 @@ console.log(studentName); // Output: Alice
 console.log(studentAge); // Output: 25
 console.log(university); // Output: XYZ
 ```
+
+32. Explain the use of `const` and `let` keywords?
+- Constant Value: Variables declared with const are constant, meaning their value cannot be reassigned or changed once it's assigned.
+```javascript
+const PI = 3.14;
+PI = 3; // Error: Assignment to constant variable
+```
+- const variables are block-scoped, meaning they are only accessible within the block they are defined in.
+``` javascript
+if (true) {
+  const x = 10;
+}
+console.log(x); // Error: x is not defined
+```
+- Declaration and Initialization Required: When declaring a variable with const, you must initialize it with a value.
+``` javascript
+const y; // Error: Missing initializer in const declaration
+```
+- Mutable Value: Variables declared with let can have their values reassigned or changed.
+``` javascript
+let count = 10;
+count = 20; // Valid: Reassignment
+
+
+```
+- Block Scoped: Similar to const, let variables are block-scoped, meaning they are only accessible within the block they are defined in.
+```javascript
+if (true) {
+  let message = 'Hello';
+}
+console.log(message); // Error: message is not defined
+```
+- Declaration and Initialization Optional: When declaring a variable with let, initialization is optional.
+```javascript
+let z; // Valid: Declaration without initialization
+z = 5; // Valid: Initialization later
+
+```
