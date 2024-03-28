@@ -5,6 +5,11 @@
 - object: object represents a set of key-value pairs and is used for more complex data structures.
 - function is a callable object that can be defined using regular function syntax or using the `new function` constructor.
 
+3. How does javascript handle **type coercion**?
+- **Type coercion** in javascript refter to the automatic conversion of values from one data type to another.
+
+- there are two type of coercion, explicit and implicit coercion. explicit corecion achieved through method such as parseInt(), Number() and toString(). implicit coercion automatically occurs during operation or comparisons. for example combining a string and a number.
+
 4. Explain  the cocept of **hosting** in javascript.
 - Hoisting is a javascript mechansim that involves moving variables and function declarations to the top of their containing scope during the compiler phase. However, the assignments to these variables or the defintions of functions remain in place.
 ```javascript
@@ -120,4 +125,23 @@ fetchData(handleData);
 
 console.log('Fetching data...');
 ```
+31. What are the new feature introduced in ES6?
+- let and const: These are new ways to declare variables in JavaScript. let allows you to declare variables that are scoped to the block they are defined in, while const allows you to declare variables that cannot be reassigned.
 
+- Arrow functions: Arrow functions provide a more concise syntax for writing functions in JavaScript. They also handle the scope of this differently compared to regular functions.
+
+- Template literals: Template literals allow you to create strings that can contain placeholders for variables. These placeholders are indicated by ${} and can contain expressions.
+
+- Enhanced object literals: Object literals in ES6 have several new features, including shorthand property syntax, computed property names, and method definitions.
+
+- Classes: ES6 introduces a new syntax for defining classes in JavaScript, making it easier to create object-oriented code.
+
+- Promises: Promises provide a way to handle asynchronous operations in JavaScript more easily and cleanly than using callbacks.
+
+- Destructuring: Destructuring allows you to extract values from arrays or objects and assign them to variables in a more concise way.
+
+- Default parameters: ES6 allows you to specify default values for function parameters, so you don't have to check for undefined values inside the function.
+
+- Rest and spread operators: The rest and spread operators (...) provide a way to work with arrays and objects more easily. The rest operator allows you to collect multiple function arguments into an array, while the spread operator allows you to spread an array or object into multiple arguments or elements.
+
+- Modules: ES6 introduces a standardized module system for JavaScript, making it easier to organize and reuse code across multiple files.
