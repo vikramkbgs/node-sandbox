@@ -145,3 +145,59 @@ console.log('Fetching data...');
 - Rest and spread operators: The rest and spread operators (...) provide a way to work with arrays and objects more easily. The rest operator allows you to collect multiple function arguments into an array, while the spread operator allows you to spread an array or object into multiple arguments or elements.
 
 - Modules: ES6 introduces a standardized module system for JavaScript, making it easier to organize and reuse code across multiple files.
+
+32. How do you use destructuring assignments in ES6?
+- Destructuring allow you to extract values from arrays or objects and assign them to variables in a more concise way.
+
+```javascript
+
+// Basic array destructuring
+const [a, b] = [1, 2];
+console.log(a); // Output: 1
+console.log(b); // Output: 2
+
+// Skipping elements
+const [x, , z] = [1, 2, 3];
+console.log(x); // Output: 1
+console.log(z); // Output: 3
+
+// Default values
+const [p, q, r = 3] = [1, 2];
+console.log(r); // Output: 3 (default value)
+
+// Swapping variables
+let m = 5;
+let n = 10;
+[n, m] = [m, n];
+console.log(m); // Output: 10 (swapped value)
+console.log(n); // Output: 5 (swapped value)
+```
+```javascript
+// Basic object destructuring
+const person = { name: 'John', age: 30 };
+const { name, age } = person;
+console.log(name); // Output: John
+console.log(age); // Output: 30
+
+// Changing variable names
+const { name: personName, age: personAge } = person;
+console.log(personName); // Output: John
+console.log(personAge); // Output: 30
+
+// Default values
+const { city = 'Unknown' } = person;
+console.log(city); // Output: Unknown (default value)
+
+// Nested object destructuring
+const student = {
+  name: 'Alice',
+  info: {
+    age: 25,
+    university: 'XYZ'
+  }
+};
+const { name: studentName, info: { age: studentAge, university } } = student;
+console.log(studentName); // Output: Alice
+console.log(studentAge); // Output: 25
+console.log(university); // Output: XYZ
+```
