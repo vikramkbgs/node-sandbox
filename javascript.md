@@ -1,3 +1,9 @@
+1. What are the **data types** present in javascript?
+- There is two data types in javascript primitive data type and composite data type.
+- in primitive data type there is 7 data type boolean, number, undefined, null, string, bigint, symbol
+- in composite data type there is object, function.
+- object: object represents a set of key-value pairs and is used for more complex data structures.
+- function is a callable object that can be defined using regular function syntax or using the `new function` constructor.
 
 4. Explain  the cocept of **hosting** in javascript.
 - Hoisting is a javascript mechansim that involves moving variables and function declarations to the top of their containing scope during the compiler phase. However, the assignments to these variables or the defintions of functions remain in place.
