@@ -1,3 +1,3 @@
-module.exports = { date: '2023-09-02T18:20:08+05:30', code: '[object Object]', functionCode: 'function function12() {
-	// Function body
-}' };
+module.exports = { date: '2024-04-23T18:20:08+05:30', code: 'do-while (let i = 0; i < 10; i++) {
+	// Loop body
+}', functionCode: '' };
