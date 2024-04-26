@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Set view engine as EJS
 app.set('view engine', 'ejs');
-
+git 
 // Create uploads directory if it doesn't exist
 const uploadDirectory = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadDirectory)) {
