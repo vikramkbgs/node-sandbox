@@ -1,11 +1,14 @@
-const { response } = require('express');
 const http = require('http');
 
-const listenServer = (req, res) =>{
-    res.writeHead(200);
-    console.log("server started..");
-    res.end('hello');
-}
+const requestListener = (req, res) => {
+    if(req.url === '/profile') {
+      res.writeHead(200);
+      res.end('Welcome to your profile!');
+    } else {
+      res.writeHead(200);
+      res.end('Hello, World!');
+    }
+  };
 
-const server = http.createServer(listenServer);
+const server = http.createServer(requestListener);
 server.listen(3000);
