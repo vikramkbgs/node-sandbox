@@ -1,13 +1,11 @@
-require('dotenv').config();
-const express = require('express');
-const app = express();
+const { response } = require('express');
+const http = require('http');
 
-PORT = process.env.PORT || 3000;
+const listenServer = (req, res) =>{
+    res.writeHead(200);
+    console.log("server started..");
+    res.end('hello');
+}
 
-app.get('/',(req, res)=>{
-res.status(200).json({'response':'i\'m home'});
-});
-
-app.listen(PORT, (req, res) =>{
-    console.log('server is running...');
-});
+const server = http.createServer(listenServer);
+server.listen(3000);
