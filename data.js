@@ -1,1 +1,3 @@
-module.exports = { date: '2024-05-18T18:31:33+05:30', code: 'var variable15 = 50;', functionCode: '' };
+module.exports = { date: '2024-05-04T18:31:34+05:30', code: 'while (let i = 0; i < 10; i++) {
+	// Loop body
+}', functionCode: '' };
